@@ -1,4 +1,15 @@
 """ 
+Temperature functions
+
+fahr_to_celsius
+---------------
+    Function for converting temperature in Fahrenheit to celcius
+
+temp_classifier
+--------------
+    Function for classifying temperatures
+
+Author: Dr Jasmine Wilson, 2023
 
 """
 
@@ -11,7 +22,7 @@ def fahr_to_celsius(temp_fahrenheit):
     ----------
     temp_fahrenheit: <numerical>
         Temperature in fahrenheit
-    
+
     Returns
     ---------
     <float>
@@ -19,7 +30,7 @@ def fahr_to_celsius(temp_fahrenheit):
 
 
     """
-    temp_celcius = (temp_fahrenheit - 32)/1.8
+    temp_celcius = (temp_fahrenheit - 32) / 1.8
     return temp_celcius
 
 
@@ -32,10 +43,10 @@ def temp_classifier(temp_celsius):
     temp_celcius: <numerical>
         Temperature in celcius
 
-    
+
     For loop: input temp_celcius
         Takes temp_celcius value and classifies the temperature class value according to the rules below:
-    
+
         class value 0:  if temp_celsius is below -2 degrees Celsius
         class value 1:  if temp_celsius is equal or warmer than -2, but less than +2 degrees Celsius
         class value 2:  if temp_celsius is equal or warmer than +2, but less than +15 degrees Celsius

@@ -27,5 +27,9 @@ dependencies:
   - ipython==8.5.0
   - ipykernel==6.15.2
 
+  - pip
+  - pip:
+    - "black[jupyter]"
+
 #conda install -c conda-forge ipympl ## for jupyter
 

@@ -1,6 +1,5 @@
-
 def celcius_to_fahr(temp_celcius):
-    return 9/5 * temp_celcius + 32
+    return 9 / 5 * temp_celcius + 32
 
 
 def kelvins_to_celcius(temp_kelvins):
@@ -26,13 +25,13 @@ def temp_calcuulator(temp_k, convert_to):
 
     Returns
     --------
-    <float> 
+    <float>
         Converted temperature
-        
+
     """
-    #check if user wants temp in Celcius
+    # check if user wants temp in Celcius
     if convert_to == "C":
-        #convert value to celcius using imported script
+        # convert value to celcius using imported script
         converted_temp = kelvins_to_celcius(temp_kelvins=temp_k)
     elif convert_to == "F":
         converted_temp = kelvins_to_fahr(temp_kelvins=temp_k)
